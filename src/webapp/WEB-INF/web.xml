@@ -1,0 +1,27 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="3.1">
+    <servlet>
+        <servlet-name>UserController</servlet-name>
+        <servlet-class>com.fitnesstracker.controller.UserController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserController</servlet-name>
+        <url-pattern>/user/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MoodLoggingController</servlet-name>
+        <servlet-class>com.fitnesstracker.controllers.MoodLoggingController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MoodLoggingController</servlet-name>
+        <url-pattern>/mood/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MentalHealthAdviceController</servlet-name>
+        <servlet-class>com.fitnesstracker.controllers.MentalHealthAdviceController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MentalHealthAdviceController</servlet-name>
+        <url-pattern>/mental-health/*</url-pattern>
+    </servlet-mapping>
+</web-app>
